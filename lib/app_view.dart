@@ -16,7 +16,15 @@ class _AppViewState extends State<AppView> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
-        children: [NavigationBar(), Expanded(child: widget.child)],
+        children: [
+          NavigationBar(),
+          Expanded(child: widget.child),
+          Container(
+            padding: EdgeInsets.all(20),
+            child: Text(
+                'Copyright Reserved \u00a9 2020. All Rights Reserved \n Developed by Saravanan'),
+          )
+        ],
       ),
     );
   }

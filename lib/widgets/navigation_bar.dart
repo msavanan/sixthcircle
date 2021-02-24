@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:navigation_bar_web/routes/routes.dart';
 import 'package:navigation_bar_web/widgets/navigation_item.dart';
 
+import '../routes/routes.dart';
+
 class NavigationBar extends StatefulWidget {
   @override
   _NavigationBarState createState() => _NavigationBarState();
@@ -26,12 +28,18 @@ class _NavigationBarState extends State<NavigationBar> {
           ),
           NavigationItem(
             selected: index == 1,
-            title: 'About',
-            routeName: routeAbout,
+            title: 'Subscribe',
+            routeName: routeSubscribe,
             onHighlight: onHighlight,
           ),
           NavigationItem(
             selected: index == 2,
+            title: 'UnSubscribe',
+            routeName: routeUnSubscribe,
+            onHighlight: onHighlight,
+          ),
+          NavigationItem(
+            selected: index == 3,
             title: 'Contact',
             routeName: routeContacts,
             onHighlight: onHighlight,
@@ -46,11 +54,14 @@ class _NavigationBarState extends State<NavigationBar> {
       case routeHome:
         changeHighlight(0);
         break;
-      case routeAbout:
+      case routeSubscribe:
         changeHighlight(1);
         break;
-      case routeContacts:
+      case routeUnSubscribe:
         changeHighlight(2);
+        break;
+      case routeContacts:
+        changeHighlight(3);
         break;
     }
   }

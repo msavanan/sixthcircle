@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_bar_web/form/del_form.dart';
 
-class AboutPage extends StatelessWidget {
+
+class UnSubscribePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: Text(
-          'About Page',
-          style: TextStyle(fontSize: 30),
-        ),
+        child: DelForm()
       ),
     );
   }

@@ -17,13 +17,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // Why builder is used: https://stackoverflow.com/questions/49748759/example-for-builder-property-in-materialapp-class-in-flutter
       builder: (_, child) => AppView(
         child: child,
       ),
-      // Global key:
-      // 1) https://medium.com/flutter-community/navigate-without-context-in-flutter-with-a-navigation-service-e6d76e880c1c
-      // 2) https://stackoverflow.com/questions/50303441/flutter-redux-navigator-globalkey-currentstate-returns-null
       initialRoute: routeHome,
       navigatorKey: navKey,
       onGenerateRoute: RouteGenerator.generateRoute,
