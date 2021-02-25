@@ -8,4 +8,6 @@ To run the Flutter Web App there are no special instruction. If in case Flutter 
 $ flutter channnel master
 $ flutter upgrade
 $ flutter config --enable-web
+$ flutter devices
 ```
+You could able to see the chrome as devices, if the flutter web app is cofigured.
