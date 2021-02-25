@@ -11,3 +11,9 @@ $ flutter config --enable-web
 $ flutter devices
 ```
 You could able to see the chrome as devices, if the flutter web app is configured.
+
+For running the app from andriodstudio terminal type,
+
+```bash
+$ flutter run -d chrome
+```
